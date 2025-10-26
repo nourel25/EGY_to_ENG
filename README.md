@@ -16,19 +16,7 @@ This project provides a **complete translation pipeline** for converting **Egypt
 
 ---
 
-## 🧩 Project Structure
-```
-├── app/
-│   ├── main.py              # FastAPI backend
-│   └── translator.py        # Model loading and inference (optional split)
-├── streamlit_app/
-│   └── app.py               # Streamlit frontend
-├── cleaned_github_ready_notebook.ipynb  # Notebook version
-├── requirements.txt
-└── README.md
-```
 
----
 
 ## 🚀 How to Run Locally
 
@@ -52,13 +40,13 @@ pip install -r requirements.txt
 
 ### 4️⃣ Run the FastAPI backend
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 ➡️ API will start at: `http://127.0.0.1:8000`
 
 ### 5️⃣ Run the Streamlit frontend
 ```bash
-streamlit run streamlit_app/app.py
+streamlit run app.py
 ```
 ➡️ Streamlit UI will open at: `http://localhost:8501`
 
@@ -69,7 +57,7 @@ streamlit run streamlit_app/app.py
 > "إزيك يا صاحبي؟ عامل إيه؟"
 
 **Output:**
-> "How are you, my friend? How are you doing?"
+> "How are you, buddy?"
 
 ---
 
